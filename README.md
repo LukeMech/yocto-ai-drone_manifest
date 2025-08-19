@@ -7,9 +7,9 @@ Yocto project for AI drone
      <https://source.android.com/setup/develop/repo>  
 
 ```
-$ mkdir ~/yocto-ai-drone && cd ~/yocto-ai-drone
-$ repo init -u https://github.com/lukemech/yocto-ai-drone_manifest.git -b master
-$ repo sync
+mkdir ~/yocto-ai-drone && cd ~/yocto-ai-drone
+repo init -u https://github.com/lukemech/yocto-ai-drone_manifest.git -b master
+repo sync
 ```
 
 2. Run "source ./oe-init-build-env" to setup bitbake environment
