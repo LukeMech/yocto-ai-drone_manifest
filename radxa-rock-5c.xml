@@ -15,6 +15,6 @@
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
   <project name="yocto-ai-drone_conf" path="build/conf" remote="lm_github">
-    <linkfile src="rock-5c.conf" dest="build/conf/local.conf"/>
+    <linkfile src="radxa-rock-5c.conf" dest="build/conf/local.conf"/>
   </project>
 </manifest>
