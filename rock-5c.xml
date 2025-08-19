@@ -21,7 +21,7 @@
     <linkfile src="recipes-kernel/linux/linux-yocto_%.bbappend" dest="meta-rockchip/recipes-kernel/linux/linux-mainline.bbappend"/>
   </project>
   
-  <project name="betafive/meta-linux-mainline" remote="github" path="meta-linux-mainline" revision="848a342f296ae0587d89e07104ae18b603704327">
+  <project name="betafive/meta-linux-mainline" remote="github" path="meta-linux-mainline" revision="848a342f296ae0587d89e07104ae18b603704327"/>
   
   <project name="yocto-ai-drone_conf" path="build/conf" remote="lm_github">
     <linkfile src="machine/rock-5c.conf" dest="meta-rockchip/conf/machine/rock-5c.conf"/>
