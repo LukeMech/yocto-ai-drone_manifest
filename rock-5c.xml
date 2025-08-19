@@ -11,6 +11,7 @@
   <project name="poky" remote="yocto" revision="5424fc6186877e1949a818307f43578b81c493ae">
     <linkfile src="scripts" dest="scripts"/>
     <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
     <linkfile src=".templateconf" dest=".templateconf"/>
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
