@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>Sync completed ;)</notice>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="lm_github" fetch="https://github.com/lukemech"/>
+
+  <default revision="master" sync-j="8" sync-c="true"/>
+  
+  <project name="poky" remote="yocto" revision="5424fc6186877e1949a818307f43578b81c493ae">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
+  </project>
+  <project name="yocto-ai-drone_conf" path="build/conf" remote="lm_github">
+    <linkfile src="rock-5c.conf" dest="build/conf/local.conf"/>
+  </project>
+</manifest>
