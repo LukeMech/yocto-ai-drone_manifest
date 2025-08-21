@@ -7,21 +7,27 @@
   <remote name="lm_github" fetch="https://github.com/lukemech"/>
 
   <default revision="master" sync-j="8" sync-c="true"/>
-  
-  <project name="poky" remote="yocto" revision="5424fc6186877e1949a818307f43578b81c493ae">
+
+  <!-- last known good: 5424fc6186877e1949a818307f43578b81c493ae -->
+  <project name="poky" remote="yocto">
     <linkfile src="scripts" dest="scripts"/>
     <linkfile src="bitbake" dest="bitbake"/>
     <linkfile src="meta-poky" dest="meta-poky"/>
     <linkfile src=".templateconf" dest=".templateconf"/>
     <linkfile src="oe-init-build-env" dest="oe-init-build-env"/>
   </project>
-  
-  <project name="meta-rockchip" remote="yocto" revision="4fdc16878efb6e1af933d65da64bfb1a4dff1735">
+
+  <!-- last known good: 4fdc16878efb6e1af933d65da64bfb1a4dff1735 -->
+  <project name="meta-rockchip" remote="yocto">
     <linkfile src="recipes-kernel/linux/linux-yocto" dest="meta-rockchip/recipes-kernel/linux/linux-mainline"/>
     <linkfile src="recipes-kernel/linux/linux-yocto_%.bbappend" dest="meta-rockchip/recipes-kernel/linux/linux-mainline.bbappend"/>
   </project>
-  <project name="meta-arm" remote="yocto" revision="8d38f576231557f545443cb9dcbedfacc78faa10"/>
-  <project name="betafive/meta-linux-mainline" remote="github" path="meta-linux-mainline" revision="848a342f296ae0587d89e07104ae18b603704327"/>
+
+  <!-- last known good: 8d38f576231557f545443cb9dcbedfacc78faa10 -->
+  <project name="meta-arm" remote="yocto"/>
+
+  <!-- last known good: 848a342f296ae0587d89e07104ae18b603704327 -->
+  <project name="betafive/meta-linux-mainline" remote="github" path="meta-linux-mainline"/>
 
   <project name="yocto-ai-drone_meta_conf" remote="lm_github">
     <linkfile src="conf" dest="build/conf"/>
