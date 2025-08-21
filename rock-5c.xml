@@ -23,9 +23,8 @@
   <project name="meta-arm" remote="yocto" revision="8d38f576231557f545443cb9dcbedfacc78faa10"/>
   <project name="betafive/meta-linux-mainline" remote="github" path="meta-linux-mainline" revision="848a342f296ae0587d89e07104ae18b603704327"/>
 
-  <project name="yocto-ai-drone_conf" path="build/conf" remote="lm_github">
-    <linkfile src="machine/rock-5c.conf" dest="meta-rockchip/conf/machine/rock-5c.conf"/>
-    <linkfile src="rock-5c.conf" dest="build/conf/local.conf"/>
+  <project name="yocto-ai-drone_meta_conf" remote="lm_github">
+    <linkfile src="conf" dest="build/conf"/>
   </project>
   
 </manifest>
